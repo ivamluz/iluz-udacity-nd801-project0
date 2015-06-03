@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivityFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Nanodegree apps!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/spotifyStreamerLauncherBtn"
+        android:layout_marginTop="46dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="launchApp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores"
+        android:id="@+id/scoresAppLaucherBtn"
+        android:layout_below="@+id/spotifyStreamerLauncherBtn"
+        android:layout_alignLeft="@+id/spotifyStreamerLauncherBtn"
+        android:layout_alignStart="@+id/spotifyStreamerLauncherBtn"
+        android:layout_alignRight="@+id/spotifyStreamerLauncherBtn"
+        android:layout_alignEnd="@+id/spotifyStreamerLauncherBtn"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="launchApp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library"
+        android:id="@+id/libraryAppLauncherBtn"
+        android:layout_below="@+id/scoresAppLaucherBtn"
+        android:layout_alignLeft="@+id/scoresAppLaucherBtn"
+        android:layout_alignStart="@+id/scoresAppLaucherBtn"
+        android:layout_alignRight="@+id/scoresAppLaucherBtn"
+        android:layout_alignEnd="@+id/scoresAppLaucherBtn"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="launchApp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build it Bigger"
+        android:id="@+id/buildItBiggerLauncherBtn"
+        android:layout_below="@+id/libraryAppLauncherBtn"
+        android:layout_alignLeft="@+id/libraryAppLauncherBtn"
+        android:layout_alignStart="@+id/libraryAppLauncherBtn"
+        android:layout_alignRight="@+id/libraryAppLauncherBtn"
+        android:layout_alignEnd="@+id/libraryAppLauncherBtn"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="launchApp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/xyzReaderLauncherBtn"
+        android:layout_below="@+id/buildItBiggerLauncherBtn"
+        android:layout_alignLeft="@+id/buildItBiggerLauncherBtn"
+        android:layout_alignStart="@+id/buildItBiggerLauncherBtn"
+        android:layout_alignRight="@+id/buildItBiggerLauncherBtn"
+        android:layout_alignEnd="@+id/buildItBiggerLauncherBtn"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="launchApp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capstone"
+        android:id="@+id/capstoneLauncherBtn"
+        android:layout_below="@+id/xyzReaderLauncherBtn"
+        android:layout_alignLeft="@+id/xyzReaderLauncherBtn"
+        android:layout_alignStart="@+id/xyzReaderLauncherBtn"
+        android:layout_alignRight="@+id/xyzReaderLauncherBtn"
+        android:layout_alignEnd="@+id/xyzReaderLauncherBtn"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="launchApp"/>
+
+</RelativeLayout>
